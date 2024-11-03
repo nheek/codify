@@ -35,6 +35,5 @@ jobs:
 
             curl -O -L https://raw.githubusercontent.com/nheek/codify/main/docker-compose.yml
 
-            cd ..
             docker compose pull
             docker compose up -d && curl -d "codify deployed succesfully 🚀" https://ntfy.nheek.com/${{ secrets.NTFY_TOPIC }}
