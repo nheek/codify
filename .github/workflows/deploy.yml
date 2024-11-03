@@ -33,7 +33,7 @@ jobs:
             mkdir codify
             cd codify
 
-            curl -O -L https://grit.nheek.com/nheek/codify/raw/branch/main/docker-compose.yml
+            curl -O -L https://raw.githubusercontent.com/nheek/codify/main/docker-compose.yml
 
             cd ..
             docker compose pull
