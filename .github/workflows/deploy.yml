@@ -19,6 +19,7 @@ jobs:
       - name: Create .env file for frontend
         run: |
           echo "VITE_WS_BACKEND_URL=${{ secrets.VITE_WS_BACKEND_URL }}" >> frontend/.env
+          echo "VITE_HTTP_BACKEND_URL=${{ secrets.VITE_HTTP_BACKEND_URL }}" >> frontend/.env
 
       - name: Build and Push Docker Images
         run: |
